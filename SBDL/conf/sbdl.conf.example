@@ -1,0 +1,80 @@
+[LOCAL]
+enable.hive = false
+hive.database = null
+account.filter = active_ind = 1
+party.filter =
+address.filter =
+kafka.topic = sbdl_kafka_cloud
+kafka.bootstrap.servers = kafka-host:kafka-port
+
+# SASL Config
+kafka.security.protocol = SASL_SSL
+kafka.sasl.mechanism = SCRAM-SHA-256
+
+# JAAS Config - Replace <USER> and <PASSWORD> with your DO credentials
+kafka.sasl.jaas.config = org.apache.kafka.common.security.scram.ScramLoginModule required \
+   username="{local_user}" \
+   password="{local_pass}";
+
+kafka.username={local_user}
+kafka.password={local_pass}
+
+# Truststore remains necessary for the "SSL" part of SASL_SSL
+kafka.ssl.truststore.location = {/path/to/trustore.jks}
+kafka.ssl.truststore.password = {trustore_pass}
+
+kafka.client.dns.lookup = use_all_dns_ips
+
+[QA]
+enable.hive = true
+hive.database = sbdl_db_qa
+account.filter = active_ind = 1
+party.filter =
+address.filter =
+kafka.topic = sbdl_kafka_cloud
+kafka.bootstrap.servers = kafka-host:kafka-port
+
+# SASL Config
+kafka.security.protocol = SASL_SSL
+kafka.sasl.mechanism = SCRAM-SHA-256
+
+# JAAS Config - Replace <USER> and <PASSWORD> with your DO credentials
+kafka.sasl.jaas.config = org.apache.kafka.common.security.scram.ScramLoginModule required \
+   username="{qa_user}" \
+   password="{qa_pass}";
+
+kafka.username={qa_user}
+kafka.password={qa_pass}
+
+# Truststore remains necessary for the "SSL" part of SASL_SSL
+kafka.ssl.truststore.location = {/path/to/trustore.jks}
+kafka.ssl.truststore.password = {trustore_pass}
+
+kafka.client.dns.lookup = use_all_dns_ips
+
+[PROD]
+enable.hive = true
+hive.database = sbdl_db
+account.filter = active_ind = 1
+party.filter =
+address.filter =
+kafka.topic = sbdl_kafka_cloud
+kafka.bootstrap.servers = kafka-host:kafka-port
+
+# SASL Config
+kafka.security.protocol = SASL_SSL
+kafka.sasl.mechanism = SCRAM-SHA-256
+
+# JAAS Config - Replace <USER> and <PASSWORD> with your DO credentials
+kafka.sasl.jaas.config = org.apache.kafka.common.security.scram.ScramLoginModule required \
+   username="{prod_user}" \
+   password="{prod_pass}";
+
+kafka.username={prod_user}
+kafka.password={prod_pass}
+
+# Truststore remains necessary for the "SSL" part of SASL_SSL
+kafka.ssl.truststore.location = {/path/to/trustore.jks}
+kafka.ssl.truststore.password = {trustore_pass}
+
+kafka.client.dns.lookup = use_all_dns_ips

@@ -1,0 +1,358 @@
+2026-02-19 17:22:43 WARN  [main] org.apache.spark.util.Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:22:43 WARN  [main] org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:22:45 WARN  [Thread-4] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 17:22:45 ERROR [Thread-4] org.apache.spark.SparkContext - Error initializing SparkContext.
+org.apache.spark.SparkException: [INVALID_SPARK_CONFIG.INVALID_EXECUTOR_SPARK_OPTIONS] Invalid Spark config: spark.executor.extraJavaOptions is not allowed to set Spark options (was '-Dspark.app.name=sbdl -Dspark.app.logdir=/root/Projects/SBDL/app-logs'). Set them directly on a SparkConf or in a properties file when using ./bin/spark-submit. SQLSTATE: 42616
+	at org.apache.spark.SparkConf.$anonfun$validateSettings$5(SparkConf.scala:576) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at org.apache.spark.SparkConf.$anonfun$validateSettings$5$adapted(SparkConf.scala:571) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at scala.Option.foreach(Option.scala:437) ~[scala-library-2.13.17.jar:?]
+	at org.apache.spark.SparkConf.$anonfun$validateSettings$4(SparkConf.scala:571) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at org.apache.spark.SparkConf.$anonfun$validateSettings$4$adapted(SparkConf.scala:570) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at scala.collection.immutable.List.foreach(List.scala:323) ~[scala-library-2.13.17.jar:?]
+	at org.apache.spark.SparkConf.validateSettings(SparkConf.scala:570) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:417) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59) ~[spark-core_2.13-4.1.1.jar:4.1.1]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:75) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:53) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247) ~[py4j-0.10.9.9.jar:?]
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374) ~[py4j-0.10.9.9.jar:?]
+	at py4j.Gateway.invoke(Gateway.java:238) ~[py4j-0.10.9.9.jar:?]
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80) ~[py4j-0.10.9.9.jar:?]
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69) ~[py4j-0.10.9.9.jar:?]
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184) ~[py4j-0.10.9.9.jar:?]
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108) ~[py4j-0.10.9.9.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-02-19 17:23:28 WARN  [main] org.apache.spark.util.Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:23:28 WARN  [main] org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:23:30 WARN  [Thread-4] org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 21.0.10+7-Ubuntu-124.04
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.Server - Started Server@1ac06886{STARTING}[11.0.26,sto=30000] @3537ms
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.AbstractConnector - Started ServerConnector@5fc7f280{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@69826ded{/,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Stopped o.s.j.s.ServletContextHandler@69826ded{/,null,STOPPED,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@10912191{/jobs,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7020a2d1{/jobs/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3418f053{/jobs/job,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@c4c8ae5{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@614468ed{/stages,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51a1d96a{/stages/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@52b9433f{/stages/stage,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2224f214{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5e7576b9{/stages/pool,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@74c1906c{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2c3b4cf3{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@26c3886b{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7881d485{/storage,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@555c170b{/storage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@779be172{/storage/rdd,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1fa35ffd{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@77d217ed{/environment,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4fcb5fb1{/environment/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@20cb2bd4{/executors,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6ac8db0a{/executors/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@5da6c17a{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@57fba49b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4ed83abb{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@68bf5de{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@585597c5{/static,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@6f9caf30{/,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@45621212{/api,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@62443d8b{/metrics,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4e3b016d{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@14aab7e5{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:23:31 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@4a339ed5{/metrics/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:34 INFO  [Thread-4] sbdl - Reading SBDL Account DF
+2026-02-19 17:23:34 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@1492ada6{/SQL,null,AVAILABLE,@Spark}
+2026-02-19 17:23:34 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@7913eb1{/SQL/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:34 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@406270de{/SQL/execution,null,AVAILABLE,@Spark}
+2026-02-19 17:23:34 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@36b37654{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-02-19 17:23:34 INFO  [Thread-4] org.sparkproject.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@9c18a23{/static/sql,null,AVAILABLE,@Spark}
+2026-02-19 17:23:36 INFO  [Thread-4] sbdl - Reading SBDL Party DF
+2026-02-19 17:23:36 INFO  [Thread-4] sbdl - Reading SBDL Address DF
+2026-02-19 17:23:36 INFO  [Thread-4] sbdl - Join Party Relations and Address
+2026-02-19 17:23:37 INFO  [Thread-4] sbdl - Join Account and Parties
+2026-02-19 17:23:37 INFO  [Thread-4] sbdl - Apply Header and create Event
+2026-02-19 17:23:37 INFO  [Thread-4] sbdl - Preparing to send data to Kafka
+2026-02-19 17:24:37 INFO  [shutdown-hook-0] org.sparkproject.jetty.server.Server - Stopped Server@1ac06886{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:24:37 INFO  [shutdown-hook-0] org.sparkproject.jetty.server.Server - Shutdown Server@1ac06886{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:24:37 INFO  [shutdown-hook-0] org.sparkproject.jetty.server.AbstractConnector - Stopped Spark@5fc7f280{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:48:10 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:48:10 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:48:11 WARN  [Thread-4] NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 17:48:12 INFO  [Thread-4] Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 21.0.10+7-Ubuntu-124.04
+2026-02-19 17:48:12 INFO  [Thread-4] Server - Started Server@4abd7cc2{STARTING}[11.0.26,sto=30000] @3521ms
+2026-02-19 17:48:12 INFO  [Thread-4] AbstractConnector - Started ServerConnector@193641ca{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:48:12 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@186b217b{/,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Stopped o.s.j.s.ServletContextHandler@186b217b{/,null,STOPPED,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@19084e16{/jobs,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@566dc05f{/jobs/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1acb5e68{/jobs/job,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5dfe4f65{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5fb26a64{/stages,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d83aed5{/stages/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@752369ba{/stages/stage,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6a03fefb{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1709a6c{/stages/pool,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@91b294d{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@61a45121{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1ab482b0{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d0de7d9{/storage,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@759ef91b{/storage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@450d8daa{/storage/rdd,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6077679{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4c5c2f56{/environment,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6d94a219{/environment/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@9b7e560{/executors,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@7c4d5d32{/executors/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@cdce976{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@237895c7{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4641fee2{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@430c6534{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4e21d6bd{/static,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@ec3d92c{/,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@e529764{/api,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@55544858{/metrics,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@30fd5f84{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@12fc3999{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:48:13 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@3a700824{/metrics/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:15 INFO  [Thread-4] sbdl - Reading SBDL Account DF
+2026-02-19 17:48:15 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4f705411{/SQL,null,AVAILABLE,@Spark}
+2026-02-19 17:48:15 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5a612a3c{/SQL/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:15 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@48659be3{/SQL/execution,null,AVAILABLE,@Spark}
+2026-02-19 17:48:15 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5c60e9f4{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-02-19 17:48:15 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@494eacf2{/static/sql,null,AVAILABLE,@Spark}
+2026-02-19 17:48:17 INFO  [Thread-4] sbdl - Reading SBDL Party DF
+2026-02-19 17:48:17 INFO  [Thread-4] sbdl - Reading SBDL Address DF
+2026-02-19 17:48:17 INFO  [Thread-4] sbdl - Join Party Relations and Address
+2026-02-19 17:48:17 INFO  [Thread-4] sbdl - Join Account and Parties
+2026-02-19 17:48:18 INFO  [Thread-4] sbdl - Apply Header and create Event
+2026-02-19 17:48:18 INFO  [Thread-4] sbdl - Preparing to send data to Kafka
+2026-02-19 17:50:38 INFO  [shutdown-hook-0] Server - Stopped Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:50:38 INFO  [shutdown-hook-0] Server - Shutdown Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:50:38 INFO  [shutdown-hook-0] AbstractConnector - Stopped Spark@193641ca{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:54:47 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:54:47 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:54:49 WARN  [Thread-4] NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 17:54:49 INFO  [Thread-4] Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 21.0.10+7-Ubuntu-124.04
+2026-02-19 17:54:49 INFO  [Thread-4] Server - Started Server@4abd7cc2{STARTING}[11.0.26,sto=30000] @3427ms
+2026-02-19 17:54:49 INFO  [Thread-4] AbstractConnector - Started ServerConnector@193641ca{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:54:49 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@186b217b{/,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Stopped o.s.j.s.ServletContextHandler@186b217b{/,null,STOPPED,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@19084e16{/jobs,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@566dc05f{/jobs/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1acb5e68{/jobs/job,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5dfe4f65{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5fb26a64{/stages,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d83aed5{/stages/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@752369ba{/stages/stage,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6a03fefb{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1709a6c{/stages/pool,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@91b294d{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@61a45121{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1ab482b0{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d0de7d9{/storage,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@759ef91b{/storage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@450d8daa{/storage/rdd,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6077679{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4c5c2f56{/environment,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6d94a219{/environment/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@9b7e560{/executors,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@7c4d5d32{/executors/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@cdce976{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@237895c7{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4641fee2{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@430c6534{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4e21d6bd{/static,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@ec3d92c{/,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@e529764{/api,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@55544858{/metrics,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@30fd5f84{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@12fc3999{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:54:50 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@3a700824{/metrics/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:52 INFO  [Thread-4] sbdl - Reading SBDL Account DF
+2026-02-19 17:54:52 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6be07796{/SQL,null,AVAILABLE,@Spark}
+2026-02-19 17:54:52 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@38e6c801{/SQL/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:52 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@705ddb4c{/SQL/execution,null,AVAILABLE,@Spark}
+2026-02-19 17:54:52 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@58db6564{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-02-19 17:54:52 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1b5cee2a{/static/sql,null,AVAILABLE,@Spark}
+2026-02-19 17:54:54 INFO  [Thread-4] sbdl - Reading SBDL Party DF
+2026-02-19 17:54:54 INFO  [Thread-4] sbdl - Reading SBDL Address DF
+2026-02-19 17:54:54 INFO  [Thread-4] sbdl - Join Party Relations and Address
+2026-02-19 17:54:55 INFO  [Thread-4] sbdl - Join Account and Parties
+2026-02-19 17:54:55 INFO  [Thread-4] sbdl - Apply Header and create Event
+2026-02-19 17:54:55 INFO  [Thread-4] sbdl - Preparing to send data to Kafka
+2026-02-19 17:55:33 INFO  [shutdown-hook-0] Server - Stopped Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:55:33 INFO  [shutdown-hook-0] Server - Shutdown Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:55:33 INFO  [shutdown-hook-0] AbstractConnector - Stopped Spark@193641ca{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:55:54 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:55:54 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:55:56 WARN  [Thread-4] NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 17:55:56 INFO  [Thread-4] Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 21.0.10+7-Ubuntu-124.04
+2026-02-19 17:55:56 INFO  [Thread-4] Server - Started Server@4abd7cc2{STARTING}[11.0.26,sto=30000] @3463ms
+2026-02-19 17:55:56 INFO  [Thread-4] AbstractConnector - Started ServerConnector@193641ca{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:55:56 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@186b217b{/,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Stopped o.s.j.s.ServletContextHandler@186b217b{/,null,STOPPED,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@19084e16{/jobs,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@566dc05f{/jobs/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1acb5e68{/jobs/job,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5dfe4f65{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@5fb26a64{/stages,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d83aed5{/stages/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@752369ba{/stages/stage,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6a03fefb{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1709a6c{/stages/pool,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@91b294d{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@61a45121{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1ab482b0{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d0de7d9{/storage,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@759ef91b{/storage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@450d8daa{/storage/rdd,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6077679{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4c5c2f56{/environment,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6d94a219{/environment/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@9b7e560{/executors,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@7c4d5d32{/executors/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@cdce976{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@237895c7{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4641fee2{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@430c6534{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4e21d6bd{/static,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@ec3d92c{/,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@e529764{/api,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@55544858{/metrics,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@30fd5f84{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@12fc3999{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:55:57 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@3a700824{/metrics/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:59 INFO  [Thread-4] sbdl - Reading SBDL Account DF
+2026-02-19 17:55:59 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6be07796{/SQL,null,AVAILABLE,@Spark}
+2026-02-19 17:55:59 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@38e6c801{/SQL/json,null,AVAILABLE,@Spark}
+2026-02-19 17:55:59 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@705ddb4c{/SQL/execution,null,AVAILABLE,@Spark}
+2026-02-19 17:55:59 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@58db6564{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-02-19 17:56:00 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1b5cee2a{/static/sql,null,AVAILABLE,@Spark}
+2026-02-19 17:56:01 INFO  [Thread-4] sbdl - Reading SBDL Party DF
+2026-02-19 17:56:01 INFO  [Thread-4] sbdl - Reading SBDL Address DF
+2026-02-19 17:56:01 INFO  [Thread-4] sbdl - Join Party Relations and Address
+2026-02-19 17:56:02 INFO  [Thread-4] sbdl - Join Account and Parties
+2026-02-19 17:56:02 INFO  [Thread-4] sbdl - Apply Header and create Event
+2026-02-19 17:56:02 INFO  [Thread-4] sbdl - Preparing to send data to Kafka
+2026-02-19 17:56:02 INFO  [shutdown-hook-0] Server - Stopped Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:56:02 INFO  [shutdown-hook-0] Server - Shutdown Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:56:02 INFO  [shutdown-hook-0] AbstractConnector - Stopped Spark@193641ca{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:57:53 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:57:53 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:58:21 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 17:58:21 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 17:58:23 WARN  [Thread-4] NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 17:58:23 INFO  [Thread-4] Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 21.0.10+7-Ubuntu-124.04
+2026-02-19 17:58:24 INFO  [Thread-4] Server - Started Server@4abd7cc2{STARTING}[11.0.26,sto=30000] @3470ms
+2026-02-19 17:58:24 INFO  [Thread-4] AbstractConnector - Started ServerConnector@568a55f2{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@752c4339{/,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Stopped o.s.j.s.ServletContextHandler@752c4339{/,null,STOPPED,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@31903c02{/jobs,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@e1233f7{/jobs/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@221c0d4c{/jobs/job,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1059b3eb{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1f4a4ffb{/stages,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2295c92{/stages/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6c1d3d6f{/stages/stage,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@c5e2928{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6ff04091{/stages/pool,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@7c9af403{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@64021437{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4a359bfa{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@6ee39e7d{/storage,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4b0153c9{/storage/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@7fc91a3{/storage/rdd,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@4d311d9{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@65958e93{/environment,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@501da2dd{/environment/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@243c582e{/executors,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@3401b5c1{/executors/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@3a7697bd{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@354afa91{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@2d3d356a{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@24bd0ac9{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@75e8e5a{/static,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@b3c71e{/,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@58ea2e70{/api,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@377a8f63{/metrics,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@531fd313{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@479cc74b{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-02-19 17:58:24 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@1daa53d5{/metrics/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:27 INFO  [Thread-4] sbdl - Reading SBDL Account DF
+2026-02-19 17:58:27 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@7dccd393{/SQL,null,AVAILABLE,@Spark}
+2026-02-19 17:58:27 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@48f9bb8{/SQL/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:27 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@3d1b2bc6{/SQL/execution,null,AVAILABLE,@Spark}
+2026-02-19 17:58:27 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@711a5065{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-02-19 17:58:27 INFO  [Thread-4] ContextHandler - Started o.s.j.s.ServletContextHandler@553f7f20{/static/sql,null,AVAILABLE,@Spark}
+2026-02-19 17:58:28 INFO  [Thread-4] sbdl - Reading SBDL Party DF
+2026-02-19 17:58:28 INFO  [Thread-4] sbdl - Reading SBDL Address DF
+2026-02-19 17:58:29 INFO  [Thread-4] sbdl - Join Party Relations and Address
+2026-02-19 17:58:29 INFO  [Thread-4] sbdl - Join Account and Parties
+2026-02-19 17:58:29 INFO  [Thread-4] sbdl - Apply Header and create Event
+2026-02-19 17:58:29 INFO  [Thread-4] sbdl - Preparing to send data to Kafka
+2026-02-19 17:58:29 INFO  [shutdown-hook-0] Server - Stopped Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:58:29 INFO  [shutdown-hook-0] Server - Shutdown Server@4abd7cc2{STOPPING}[11.0.26,sto=30000]
+2026-02-19 17:58:29 INFO  [shutdown-hook-0] AbstractConnector - Stopped Spark@568a55f2{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 18:00:04 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 18:00:04 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 18:00:06 WARN  [main] NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 18:00:22 WARN  [main] Utils - Your hostname, cipher, resolves to a loopback address: 127.0.1.1; using 10.47.0.5 instead (on interface eth0)
+2026-02-19 18:00:22 WARN  [main] Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2026-02-19 18:00:23 WARN  [main] NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-02-19 18:00:26 INFO  [Thread-5] Server - jetty-11.0.26; built: 2025-08-14T18:03:14.457Z; git: 7559873b6e46eea7c2c6da2b58327ea2ecf941f4; jvm 21.0.10+7-Ubuntu-124.04
+2026-02-19 18:00:26 INFO  [Thread-5] Server - Started Server@20a465bc{STARTING}[11.0.26,sto=30000] @4721ms
+2026-02-19 18:00:26 INFO  [Thread-5] AbstractConnector - Started ServerConnector@e024e23{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 18:00:26 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@1eb867e4{/,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Stopped o.s.j.s.ServletContextHandler@1eb867e4{/,null,STOPPED,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@75c5680b{/jobs,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@329da0c{/jobs/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@36c2a551{/jobs/job,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@35f33ec8{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@5a4ef992{/stages,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@688281dc{/stages/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@20abdad2{/stages/stage,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@5b438d37{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@476089d2{/stages/pool,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@5f7e1d73{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@381f8fd6{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@17bd0ed9{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@3dbf2b38{/storage,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@42c509e0{/storage/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@2c003667{/storage/rdd,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@733e436f{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@27ced0bd{/environment,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@49c6bb0a{/environment/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@116171ba{/executors,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@30deb39e{/executors/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@329a4d29{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@5970955e{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@716ed2b1{/executors/heapHistogram,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@c86c965{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@73ca098c{/static,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@c697e6a{/,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@49ac76d5{/api,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@52d34f06{/metrics,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@19d8a464{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@6afafc3c{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-02-19 18:00:27 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@173b7367{/metrics/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:29 INFO  [Thread-5] sbdl - Reading SBDL Account DF
+2026-02-19 18:00:30 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@167907da{/SQL,null,AVAILABLE,@Spark}
+2026-02-19 18:00:30 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@6da3d788{/SQL/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:30 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@4fdf39c{/SQL/execution,null,AVAILABLE,@Spark}
+2026-02-19 18:00:30 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@19754708{/SQL/execution/json,null,AVAILABLE,@Spark}
+2026-02-19 18:00:30 INFO  [Thread-5] ContextHandler - Started o.s.j.s.ServletContextHandler@72615dcc{/static/sql,null,AVAILABLE,@Spark}
+2026-02-19 18:00:32 INFO  [Thread-5] sbdl - Reading SBDL Party DF
+2026-02-19 18:00:32 INFO  [Thread-5] sbdl - Reading SBDL Address DF
+2026-02-19 18:00:32 INFO  [Thread-5] sbdl - Join Party Relations and Address
+2026-02-19 18:00:32 INFO  [Thread-5] sbdl - Join Account and Parties
+2026-02-19 18:00:32 INFO  [Thread-5] sbdl - Apply Header and create Event
+2026-02-19 18:00:32 INFO  [Thread-5] sbdl - Preparing to send data to Kafka
+2026-02-19 18:01:03 INFO  [Thread-5] sbdl - Finished sending data to Kafka
+2026-02-19 18:01:03 INFO  [Thread-5] Server - Stopped Server@20a465bc{STOPPING}[11.0.26,sto=30000]
+2026-02-19 18:01:03 INFO  [Thread-5] Server - Shutdown Server@20a465bc{STOPPING}[11.0.26,sto=30000]
+2026-02-19 18:01:03 INFO  [Thread-5] AbstractConnector - Stopped Spark@e024e23{HTTP/1.1, (http/1.1)}{0.0.0.0:4040}
+2026-02-19 18:01:04 INFO  [Thread-5] sbdl - Stopping the spark session, Job Finished
